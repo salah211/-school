@@ -1,0 +1,193 @@
+/*
+#1E2A38  -  background
+#3C8DBC  -  buttons
+#F1F1F1  -  fuonts
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1E2A38;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.options {
+    gap: 10px;
+}
+
+.icon {
+    margin-left: auto; 
+    font-size: 30px; 
+    color: #F1F1F1; 
+    cursor: pointer; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.icon:hover {
+    color: #3C8DBC; 
+    transform: scale(1.2); 
+}
+
+
+button {
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #3C8DBC;
+    color: #F1F1F1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #357AB7;
+    padding: 13px 22px;
+}
+
+h3 {
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #F1F1F1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid #F1F1F1;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#classForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px; /* مسافة بين العناصر */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 12rem;
+  height: 10.5rem;
+  margin: auto; /* يجعلها في منتصف العرض */
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.class-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  width: 90%;
+  font-family: "Changa", sans-serif;
+}
+
+.class-actions {
+  display: flex;
+  gap: 10px;
+}
+  
+#openBtn,
+#pointsBtn{
+  background-color: green;
+}
+
+#editBtn {
+  background-color: #3C8DBC;
+  color: white;
+}
+
+#deletBtn {
+  background-color: #c0392b;
+  color: white;
+}
+
+#name-class{
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#gradeInput,
+#sectionInput{
+  text-align: center;
+  width: 200px;
+  border-radius: 8px;
+}
+
+table th, table td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+#title{
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#cancelBtn{
+  background-color: #c0392b;
+  padding: 10px 20px;
+}
+#sendBtn{
+  background-color: green;
+  padding: 10px 20px;
+}
+
+#cancelBtn:hover{
+  padding: 13px 23px;
+}
+
+#sendBtn:hover{
+  padding: 13px 23px;
+}
+
+
+#actionBtn{
+  background-color: green;
+}
+
+#cancelBtn{
+  background-color: #c0392b;
+}
+
+#cancelBtn:hover{
+  background-color: #6b2017;
+}
+
+#actionBtn:hover{
+  background-color: rgb(1, 65, 1);
+}

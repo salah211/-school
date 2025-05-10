@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة المعلم</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="teacher.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body dir="rtl">
+
+
+
+    <div class="header">
+        <div class="icon">
+            <i class="fa-solid fa-user" onclick="underworking()"></i>
+        </div>
+
+        <div class="options">
+            <button class="add-class" id="addClassBtn" >اضافة صف</button>
+            <button class="options" onclick="showthedelevoper()">الاعدادات</button>
+        </div>
+    </div>
+
+
+
+    <div class="body">
+        <div id="classForm" style="display: none; margin-top: 20px;">
+            
+            <label >الصف:</label><br>
+            <input type="text" id="gradeInput" >
+            <br><br>
+            <label >الشعبة:</label><br>
+            <input type="text" id="sectionInput">
+            <br><br>
+            <button onclick="addSection()">إضافة الشعبة</button>
+
+        </div>
+        <h3>الصفوف المضافة</h3>
+        <hr>
+        <div id="classList" style="margin-top: 20px;"></div>
+
+
+    </div> 
+ 
+    <script src="script.js"></script>
+</body>
+</html>

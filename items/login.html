@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وجهة البدء</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="pictuers/school.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            background-color: #1E2A38;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 50px;
+        }
+        .items-login{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #3C8DBC;
+            font-family: "Changa", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            border: solid;
+        }
+
+        .submit{
+            font-family: "Changa", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            cursor: pointer;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        .Text{
+            font-family: "Changa", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: bold;
+        }
+        input{
+            border-radius: 15px;
+            text-align: center;
+        }
+        .choose{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="Text">تسجيل الدخول</h1>
+        </div>  
+
+        <form id="login-form" class="items-login">
+            <div class="choose">
+                <div>               
+                    <label for="option1">معلم:</label>
+                    <input type="radio" name="option" id="option1" value="1">
+                </div>
+                <div>
+                    <label for="option2">طالب:</label>
+                    <input type="radio" name="option" id="option2" value="2">
+                </div>
+            </div>   
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" class="username" id="username">
+            <label for="password">كلمة السر:</label>
+            <input type="password" class="password" id="password">
+            <button type="submit" class="submit">دخول</button>
+        </form>
+    </div>
+
+    <script>
+        // إضافة حدث عند إرسال النموذج
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();  // منع إرسال النموذج الفوري
+
+            // الحصول على المدخلات
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const selectedOption = document.querySelector('input[name="option"]:checked');  // الحصول على الخيار المحدد (معلم أو طالب)
+
+            // تحقق من أن جميع الحقول قد تم ملؤها
+            if (!username || !password || !selectedOption) {
+                alert("يرجى ملء جميع الحقول.");
+                return; // إيقاف الإجراء إذا كانت الحقول فارغة
+            }
+
+            // تحقق من الاختيارات وبيانات الدخول
+            if (selectedOption.value === "1" && username === "salah" && password === "000") {
+                // معلم
+                window.location.href = "TeacherDashbord/teacher.html";
+            } else if (selectedOption.value === "2" && username === "salah" && password === "000") {
+                // طالب
+                window.location.href = "StudentDashbord/student.html";
+            } else {
+                alert("بيانات الدخول غير صحيحة");
+            }
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    transition: background-color 1s ease;
+    background-image: url("pictuers/third.png");
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    background-size: cover;       /* لتكبير الصورة لتغطي كامل الشاشة */
+    background-position: center;  /* لوضع الصورة في منتصف الخلفية */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    transition: all 0.5s ease;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* تأكد من أن الجسم يغطي كامل الشاشة */
+  }
+.FirstText{
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+.btn-start {
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }

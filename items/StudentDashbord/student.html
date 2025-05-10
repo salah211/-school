@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="reading.png" type="image/png">
+
+
+    <title>واجهة الطالب</title>
+</head>
+<body dir="rtl">
+    <div class="header">
+        <div class="icon">
+            <img src="school.png" alt="الحساب" class="icon">
+        </div> <!-- أيقونة المدرسة أو شعار -->
+        
+        <div class="options">
+            <button id="lessonsBtn">الدروس</button>
+            <button id="settingsBtn">الإعدادات</button>
+            <button id="storeBtn">المتجر</button>
+        </div>
+    
+        <div class="account">
+            <button id="accountBtn">👤 الحساب</button>
+        </div>
+    </div>  
+    <hr>
+    <!-- النص في الزاوية العلوية اليمنى -->
+    <div>
+
+    </div>
+
+    <!-- واجهة الدروس (التي ستظهر عند النقر) -->
+    <div class="lessons-interface">
+        <p  class="class-info">الصف الثالث - الشعبة الثالثة</p>
+        <p>الواجب هو كتابة درس العلوم في الصفحة 30 </p>
+        <p><strong>ملاحظة:</strong>الدي لم يكتب الدرس سوفى تخصم منهو النقاط</p>
+    </div>
+
+        <!-- واجهة الإعدادات -->
+    <div class="settings-interface">
+        <p class="settings-title">⚙️ إعدادات الحساب</p>
+        <p>الإعدادات غير متوفرة حاليا</p>
+        <p>المصمم : صلاح الدين المحمد</p>
+
+    </div>
+
+    <!-- واجهة المتجر -->
+    <div class="store-interface">
+        <div class="points-display">
+            <img src="dollar.png" alt="نقطة" class="points-icon">
+            <span id="studentPoints">100</span>
+        </div>
+            
+
+        <div class="store-items">
+            <div class="store-item">
+                <img src="pen.jpeg" alt="قلم" class="item-image">
+                <p>قلم </p>
+                <p class="item-price">السعر: 10 نقطة</p>
+                <button class="buy-btn">شراء</button>
+            </div>
+
+            <div class="store-item">
+                <img src="game.jpeg" alt="لعبة" class="item-image">
+                <p>لعبة تعليمية</p>
+                <p class="item-price">السعر: 70 نقطة</p>
+                <button class="buy-btn">شراء</button>
+            </div>
+
+            <div class="store-item">
+                <img src="food.jpg" alt="وجبة" class="item-image">
+                <p>بسكويت </p>
+                <p class="item-price">السعر: 40 نقطة</p>
+                <button class="buy-btn">شراء</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- واجهة الحساب -->
+    <div class="account-interface">
+        <h2 class="student-name">محمد العارف</h2>
+    
+        <div class="grades">
+        <div class="subject">عربي: <span class="mark">85</span></div>
+        <div class="subject">إنجليزي: <span class="mark">90</span></div>
+        <div class="subject">اجتماعيات: <span class="mark">78</span></div>
+        <div class="subject">ديانة: <span class="mark">95</span></div>
+        <div class="subject">علوم: <span class="mark">88</span></div>
+        <div class="subject">رياضيات: <span class="mark">82</span></div>
+        </div>
+    
+        <hr>
+    
+        <div class="summary">
+        <div>المجموع: <span id="total">0</span></div>
+        <div>المعدل: <span id="average">0</span></div>
+        <div>وضع الطالب: <span id="status">—</span></div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

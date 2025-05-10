@@ -1,0 +1,247 @@
+/*
+#1E2A38  -  background
+#3C8DBC  -  buttons
+#F1F1F1  -  fonts
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none; /* للمتصفحات القديمة */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    background-color: #1E2A38;
+    font-family: "Changa", sans-serif;
+}
+
+button {
+    font-family: "Changa", sans-serif;
+    font-style: normal;
+    background-color: #3C8DBC;
+    color: #F1F1F1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #3C8DBC;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+}
+
+.options button,
+.account button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: #3C8DBC;
+    font-weight: bold;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+hr {
+    border: 1px solid #F1F1F1;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.options button:active {
+    background-color: #2c6e8f;
+    transform: scale(0.95);
+}
+
+.lessons-interface,
+.settings-interface,
+.store-interface {
+    font-family: "Changa", sans-serif;
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    position: relative;
+    transform: translateY(10px);
+}
+
+.interface-active {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.class-info {
+    background-color: #2c6e8f;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.settings-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.store-interface {
+    background-color: #3C8DBC;
+    color: white;
+}
+
+.points-box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+
+.store-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.store-item {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.item-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #3C8DBC;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background-color: #3C8DBC;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.points-display {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.points-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+button:hover {
+    padding: 10px 22px;
+    background-color: #1E2A38;
+}
+
+.account-interface {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    direction: rtl;
+}
+
+.student-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3C8DBC;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grades-table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.grades-table th {
+    background-color: #3C8DBC;
+    color: white;
+    padding: 8px;
+}
+
+.grades-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.student-name {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.summary {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #e6ecf1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #1E2A38;
+    text-align: center;
+}
